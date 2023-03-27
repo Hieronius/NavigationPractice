@@ -22,6 +22,8 @@ class ViewController: UIViewController {
 //        window = UIWindow()
 //        window?.rootViewController = ViewController()
 //        window?.makeKeyAndVisible()
+        
+        print("testCOMM")
     }
 
 
@@ -60,6 +62,7 @@ class ViewController: UIViewController {
         let vc = storyboard?.instantiateViewController(withIdentifier: "Test2")
         self.present(vc!, animated: true)
     }
+    
     
 }
 
