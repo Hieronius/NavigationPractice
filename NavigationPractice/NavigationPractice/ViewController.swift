@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 //        window?.rootViewController = ViewController()
 //        window?.makeKeyAndVisible()
         
-        print("testCOMM")
+        
     }
 
 
@@ -32,19 +32,31 @@ class ViewController: UIViewController {
 //        window?.rootViewController = SecondViewController()
 //        window?.makeKeyAndVisible()
     
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC")
-        self.navigationController?.pushViewController(vc!, animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondVC")
+//        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        let storyboard = UIStoryboard(name: "SecondViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        present(vc,animated: true)
     }
     
     @IBAction func goToTheThirdVCButtonPressed(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ThirdVC")
-        self.navigationController?.pushViewController(vc!, animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "ThirdVC")
+//        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        let storyboard = UIStoryboard(name: "ThirdVC", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ThirdVC") as! ThirdViewController
+        present(vc,animated: true)
     }
     
     
     @IBAction func goToTheFourthVCButtonPressed(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "FourthVC")
-        self.navigationController?.pushViewController(vc!, animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "FourthVC")
+//        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        let storyboard = UIStoryboard(name: "FourthVC", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FourthVC") as! FourthViewController
+        self.navigationController!.pushViewController(vc, animated: true)
     }
     
     
