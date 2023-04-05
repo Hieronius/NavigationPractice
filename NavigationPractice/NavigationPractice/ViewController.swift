@@ -44,19 +44,21 @@ class ViewController: UIViewController {
 //        let vc = storyboard?.instantiateViewController(withIdentifier: "ThirdVC")
 //        self.navigationController?.pushViewController(vc!, animated: true)
         
-        let storyboard = UIStoryboard(name: "ThirdVC", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ThirdVC") as! ThirdViewController
+        let storyboard = UIStoryboard(name: "ThirdViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ThirdViewController") as! ThirdViewController
         present(vc,animated: true)
     }
     
     
     @IBAction func goToTheFourthVCButtonPressed(_ sender: UIButton) {
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "FourthVC")
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "FourthViewController")
 //        self.navigationController?.pushViewController(vc!, animated: true)
         
-        let storyboard = UIStoryboard(name: "FourthVC", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "FourthVC") as! FourthViewController
-        self.navigationController!.pushViewController(vc, animated: true)
+//        let storyboard = UIStoryboard(name: "FourthViewController", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "FourthViewController") as! FourthViewController
+//         self.navigationController!.pushViewController(vc, animated: true)
+        
+        // present(vc, animated: true)
     }
     
     
